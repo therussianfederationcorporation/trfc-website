@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Contact TRFC for official coordination. Secure channels and public inquiry routing."
+    />
+    <meta name="theme-color" content="#050806" />
+    <title>Contact — The Russian Federation Corporation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body data-page="contact">
+    <div data-site-header></div>
+
+    <main id="main" class="layout">
+      <header class="page-hero">
+        <h1>Contact &amp; routing</h1>
+        <p>
+          Use classified or authenticated channels for controlled information. The inquiry form below is a
+          frontend-only demonstration and does not transmit data. Official mail and phone trees are listed for
+          enterprise-grade coordination.
+        </p>
+      </header>
+
+      <section class="section grid-2" aria-labelledby="channels-title">
+        <div class="stack">
+          <div class="section__header">
+            <h2 id="channels-title" class="section__title">Official channels</h2>
+            <p class="section__subtitle">
+              Replace placeholders with production endpoints before public launch. Numbers and addresses here follow
+              neutral formatting patterns suitable for staging environments.
+            </p>
+          </div>
+          <article class="card">
+            <h3>Headquarters switchboard</h3>
+            <p class="division__meta" style="margin-top: 0">UTC+3 business hours</p>
+            <p>
+              <strong>Voice:</strong> +7 (000) 000-0000<br />
+              <strong>Secure fax:</strong> +7 (000) 000-0001<br />
+              <strong>Postal:</strong> TRFC Central Registry, Box 0000, Official District, National Capital Region
+            </p>
+          </article>
+          <article class="card">
+            <h3>Program intake</h3>
+            <p>
+              <strong>Email (unclassified staging):</strong>
+              <a href="mailto:programs@trfc.example.gov">programs@trfc.example.gov</a><br />
+              <strong>Reference format:</strong> TRFC-INQ-YYYYMMDD-#####
+            </p>
+          </article>
+        </div>
+
+        <div>
+          <div class="section__header">
+            <h2 class="section__title">Inquiry form (demo)</h2>
+            <p class="section__subtitle">
+              Validates locally in the browser. Wire to your secure workflow service when moving beyond static hosting.
+            </p>
+          </div>
+          <form id="contact-form" class="form card" novalidate>
+            <div>
+              <label for="name">Full name <span aria-hidden="true">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div>
+              <label for="organization">Organization <span aria-hidden="true">*</span></label>
+              <input id="organization" name="organization" type="text" autocomplete="organization" required />
+            </div>
+            <div>
+              <label for="email">Email <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div>
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic">
+                <option value="technology">Technology directorate</option>
+                <option value="nano">Nanotechnology</option>
+                <option value="bio">Biohub infrastructure</option>
+                <option value="acoustics">Sound engineering</option>
+                <option value="systems">Systems engineering</option>
+                <option value="compliance">Compliance</option>
+                <option value="other">Other / multi-domain</option>
+              </select>
+            </div>
+            <div>
+              <label for="message">Message <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" required></textarea>
+              <p class="form__hint">Do not include classified details in this staging form.</p>
+            </div>
+            <button class="btn btn--primary" type="submit">Submit (demo)</button>
+            <p id="form-status" class="form-status" hidden role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div data-site-footer></div>
+    <script src="assets/js/chrome.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
